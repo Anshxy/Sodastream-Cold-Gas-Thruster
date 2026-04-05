@@ -73,6 +73,6 @@ Tested at 5.5 bar measured inlet pressure (set point 6 bar, drooped under ~3 g/s
 
 ## Notes
  
-The isentropic MATLAB model is the theoretical ceiling. Every real system sits below it. The point of running all three methods wasn't to get the same number — it was to understand why each one differs and attribute the gaps to specific physical mechanisms.
- 
-CFD was run in Ansys Fluent 2025 R2 as a 2D axisymmetric domain with k-omega SST turbulence model and CO2 ideal gas properties.
+Basically, the MATLAB model gave me the absolute best-case scenario. The real world is never that perfect. I didn't run all three methods expecting the thrust numbers to match perfectly; I just wanted to see exactly how much performance I was losing at each step and figure out which physical mechanisms (like friction) were causing it.
+
+Setup for the Ansys Fluent 2025 R2 simulation was pretty standard: 2D axisymmetric, k-omega SST, and ideal gas CO2.
